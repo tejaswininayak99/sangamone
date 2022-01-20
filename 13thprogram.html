@@ -4,9 +4,76 @@
 
     <title>Colour</title>
     <meta name="viewport" content="width=device-width">
-	
-	<ul class="colour-list">
+       <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+  
+
    
+
+    <style>
+     * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  padding: 20px 10px;
+}
+
+.header: hover{
+background-color: transparent;
+}
+	.button1{
+
+padding:0.35em 1.2em;
+
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+background-color:silver;
+text-align:center;
+
+}
+.button1:hover{
+color:cyan;
+background-color:black;
+}
+@media all and (max-width:30em){
+a.button1{
+display:block;
+margin:0.4em auto;
+}
+}
+.b1{
+background-color:beige;
+}
+  
+    </style>
+	
+	</head>
+
+	<body>
+
+    
+<div class="header">
+  <form class="nav">
+  <h1 style="color: red;">Search your color here</h1>
+        <input class="b1" type="search" placeholder="Search" >
+     <a  class="button1">Search</a>
+      </form>
+	
+  </div>
+</div>
+
+
+
      <li style="background: darkblue;" class="cd" id="darkblue">
         <h1>darkblue</h1>
         <ul class="col">
@@ -20,7 +87,7 @@
     
     <li style="background: lightcyan;" class="cl" id="lightcyan">
         <h1>lightcyan</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightcyan</code></li>
             <li><code class="hex-value">#E0FFFF</code></li>
             <li><code class="rgb-value">rgb(224,255,255)</code></li>
@@ -30,7 +97,7 @@
      
     <li style="background: snow;" class="cl" id="snow">
         <h1>snow</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">snow</code></li>
             <li><code class="hex-value">#FFFAFA</code></li>
             <li><code class="rgb-value">rgb(255,250,250)</code></li>
@@ -40,7 +107,7 @@
     
     <li style="background: lightsalmon;" class="cd" id="lightsalmon">
         <h1>lightsalmon</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightsalmon</code></li>
             <li><code class="hex-value">#FFA07A</code></li>
             <li><code class="rgb-value">rgb(255,160,122)</code></li>
@@ -51,7 +118,7 @@
     
     <li style="background: darkcyan;" class="cd" id="darkcyan">
         <h1>darkcyan</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkcyan</code></li>
             <li><code class="hex-value">#008B8B</code></li>
             <li><code class="rgb-value">rgb(0,139,139)</code></li>
@@ -61,7 +128,7 @@
  
     <li style="background: lightgray;" class="cl" id="lightgray">
         <h1>lightgray</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightgray</code></li>
             <li><code class="hex-value">#D3D3D3</code></li>
             <li><code class="rgb-value">rgb(211,211,211)</code></li>
@@ -71,7 +138,7 @@
     
     <li style="background: turquoise;" class="cd" id="turquoise">
         <h1>turquoise</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">turquoise</code></li>
             <li><code class="hex-value">#40E0D0</code></li>
             <li><code class="rgb-value">rgb(64,224,208)</code></li>
@@ -82,7 +149,7 @@
     
        <li style="background: lavender;" class="cl" id="lavender">
         <h1>lavender</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lavender</code></li>
             <li><code class="hex-value">#E6E6FA</code></li>
             <li><code class="rgb-value">rgb(230,230,250)</code></li>
@@ -94,7 +161,7 @@
     
     <li style="background: brown;" class="cd" id="brown">
         <h1>brown</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">brown</code></li>
             <li><code class="hex-value">#A52A2A</code></li>
             <li><code class="rgb-value">rgb(165,42,42)</code></li>
@@ -105,7 +172,7 @@
   
     <li style="background: red;" class="cd" id="red">
         <h1>red</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">red</code></li>
             <li><code class="hex-value">#FF0000</code></li>
             <li><code class="rgb-value">rgb(255,0,0)</code></li>
@@ -115,7 +182,7 @@
     
     <li style="background: floralwhite;" class="cl" id="floralwhite">
         <h1>floralwhite</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">floralwhite</code></li>
             <li><code class="hex-value">#FFFAF0</code></li>
             <li><code class="rgb-value">rgb(255,250,240)</code></li>
@@ -125,7 +192,7 @@
     
     <li style="background: lightblue;" class="cl" id="lightblue">
         <h1>lightblue</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightblue</code></li>
             <li><code class="hex-value">#ADD8E6</code></li>
             <li><code class="rgb-value">rgb(173,216,230)</code></li>
@@ -135,7 +202,7 @@
     
     <li style="background: silver;" class="cd" id="silver">
         <h1>silver</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">silver</code></li>
             <li><code class="hex-value">#C0C0C0</code></li>
             <li><code class="rgb-value">rgb(192,192,192)</code></li>
@@ -145,7 +212,7 @@
     
     <li style="background: beige;" class="cl" id="beige">
         <h1>beige</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">beige</code></li>
             <li><code class="hex-value">#F5F5DC</code></li>
             <li><code class="rgb-value">rgb(245,245,220)</code></li>
@@ -157,7 +224,7 @@
     
     <li style="background: indigo;" class="cd" id="indigo">
         <h1>indigo</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">indigo</code></li>
             <li><code class="hex-value">#4B0082</code></li>
             <li><code class="rgb-value">rgb(75,0,130)</code></li>
@@ -165,12 +232,9 @@
     </li>
 
     
- 
-
-    
     <li style="background: maroon;" class="cd" id="maroon">
         <h1>maroon</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">maroon</code></li>
             <li><code class="hex-value">#800000</code></li>
             <li><code class="rgb-value">rgb(128,0,0)</code></li>
@@ -179,7 +243,7 @@
  
     <li style="background: crimson;" class="cd" id="crimson">
         <h1>crimson</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">crimson</code></li>
             <li><code class="hex-value">#DC143C</code></li>
             <li><code class="rgb-value">rgb(220,20,60)</code></li>
@@ -190,7 +254,7 @@
     
     <li style="background: magenta;" class="cd" id="magenta">
         <h1>magenta</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">magenta</code></li>
             <li><code class="hex-value">#FF00FF</code></li>
             <li><code class="rgb-value">rgb(255,0,255)</code></li>
@@ -200,7 +264,7 @@
     
     <li style="background: olive;" class="cd" id="olive">
         <h1>olive</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">olive</code></li>
             <li><code class="hex-value">#808000</code></li>
             <li><code class="rgb-value">rgb(128,128,0)</code></li>
@@ -209,7 +273,7 @@
   
     <li style="background: yellow;" class="cl" id="yellow">
         <h1>yellow</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">yellow</code></li>
             <li><code class="hex-value">#FFFF00</code></li>
             <li><code class="rgb-value">rgb(255,255,0)</code></li>
@@ -219,7 +283,7 @@
     
     <li style="background: deeppink;" class="cd" id="deeppink">
         <h1>deeppink</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">deeppink</code></li>
             <li><code class="hex-value">#FF1493</code></li>
             <li><code class="rgb-value">rgb(255,20,147)</code></li>
@@ -229,7 +293,7 @@
     
     <li style="background: lightyellow;" class="cl" id="lightyellow">
         <h1>lightyellow</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightyellow</code></li>
             <li><code class="hex-value">#FFFFE0</code></li>
             <li><code class="rgb-value">rgb(255,255,224)</code></li>
@@ -242,7 +306,7 @@
     
     <li style="background: lightpink;" class="cl" id="lightpink">
         <h1>lightpink</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">lightpink</code></li>
             <li><code class="hex-value">#FFB6C1</code></li>
             <li><code class="rgb-value">rgb(255,182,193)</code></li>
@@ -252,7 +316,7 @@
   
     <li style="background: coral;" class="cd" id="coral">
         <h1>coral</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">coral</code></li>
             <li><code class="hex-value">#FF7F50</code></li>
             <li><code class="rgb-value">rgb(255,127,80)</code></li>
@@ -263,7 +327,7 @@
     
     <li style="background: purple;" class="cd" id="purple">
         <h1>purple</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">purple</code></li>
             <li><code class="hex-value">#800080</code></li>
             <li><code class="rgb-value">rgb(128,0,128)</code></li>
@@ -273,7 +337,7 @@
     
     <li style="background: darkviolet;" class="cd" id="darkviolet">
         <h1>darkviolet</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkviolet</code></li>
             <li><code class="hex-value">#9400D3</code></li>
             <li><code class="rgb-value">rgb(148,0,211)</code></li>
@@ -282,7 +346,7 @@
 
     <li style="background: grey;" class="colour-entry dark" id="grey">
         <h1>grey</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">grey</code></li>
             <li><code class="hex-value">#808080</code></li>
             <li><code class="rgb-value">rgb(128,128,128)</code></li>
@@ -292,7 +356,7 @@
     
     <li style="background: gray;" class="cd" id="gray">
         <h1>gray</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">gray</code></li>
             <li><code class="hex-value">#808080</code></li>
             <li><code class="rgb-value">rgb(128,128,128)</code></li>
@@ -302,7 +366,7 @@
     
     <li style="background: skyblue;" class="cd" id="skyblue">
         <h1>skyblue</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">skyblue</code></li>
             <li><code class="hex-value">#87CEEB</code></li>
             <li><code class="rgb-value">rgb(135,206,235)</code></li>
@@ -311,7 +375,7 @@
 
     <li style="background: darkgrey;" class="cd" id="darkgrey">
         <h1>darkgrey</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkgrey</code></li>
             <li><code class="hex-value">#A9A9A9</code></li>
             <li><code class="rgb-value">rgb(169,169,169)</code></li>
@@ -320,7 +384,7 @@
 
     <li style="background: darkgray;" class="cd" id="darkgray">
         <h1>darkgray</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkgray</code></li>
             <li><code class="hex-value">#A9A9A9</code></li>
             <li><code class="rgb-value">rgb(169,169,169)</code></li>
@@ -330,7 +394,7 @@
     
     <li style="background: white;" class="cl" id="white">
         <h1>white</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">white</code></li>
             <li><code class="hex-value">#FFFFFF</code></li>
             <li><code class="rgb-value">rgb(255,255,255)</code></li>
@@ -340,7 +404,7 @@
     
     <li style="background: navy;" class="cd" id="navy">
         <h1>navy</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">navy</code></li>
             <li><code class="hex-value">#000080</code></li>
             <li><code class="rgb-value">rgb(0,0,128)</code></li>
@@ -350,7 +414,7 @@
     
     <li style="background: darkorange;" class="cd" id="darkorange">
         <h1>darkorange</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkorange</code></li>
             <li><code class="hex-value">#FF8C00</code></li>
             <li><code class="rgb-value">rgb(255,140,0)</code></li>
@@ -360,7 +424,7 @@
    
     <li style="background: black;" class="cd" id="black">
         <h1>black</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">black</code></li>
             <li><code class="hex-value">#000000</code></li>
             <li><code class="rgb-value">rgb(0,0,0)</code></li>
@@ -370,7 +434,7 @@
  
     <li style="background: teal;" class="cd" id="teal">
         <h1>teal</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">teal</code></li>
             <li><code class="hex-value">#008080</code></li>
             <li><code class="rgb-value">rgb(0,128,128)</code></li>
@@ -380,7 +444,7 @@
     
     <li style="background: darkturquoise;" class="cd" id="darkturquoise">
         <h1>darkturquoise</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkturquoise</code></li>
             <li><code class="hex-value">#00CED1</code></li>
             <li><code class="rgb-value">rgb(0,206,209)</code></li>
@@ -389,7 +453,7 @@
 
     <li style="background: darkgreen;" class="cd" id="darkgreen">
         <h1>darkgreen</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">darkgreen</code></li>
             <li><code class="hex-value">#006400</code></li>
             <li><code class="rgb-value">rgb(0,100,0)</code></li>
@@ -398,7 +462,7 @@
 
     <li style="background: blue;" class="cd" id="blue">
         <h1>blue</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">blue</code></li>
             <li><code class="hex-value">#0000FF</code></li>
             <li><code class="rgb-value">rgb(0,0,255)</code></li>
@@ -408,7 +472,7 @@
     
     <li style="background: cyan;" class="cl" id="cyan">
         <h1>cyan</h1>
-        <ul class="code-list">
+        <ul class="col" style= text-align:"center";>
             <li><code class="colour-name">cyan</code></li>
             <li><code class="hex-value">#00FFFF</code></li>
             <li><code class="rgb-value">rgb(0,255,255)</code></li>
@@ -418,7 +482,7 @@
     
     <li style="background: aqua;" class="cl" id="aqua">
         <h1>aqua</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">aqua</code></li>
             <li><code class="hex-value">#00FFFF</code></li>
             <li><code class="rgb-value">rgb(0,255,255)</code></li>
@@ -428,7 +492,7 @@
     
     <li style="background: green;" class="cd" id="green">
         <h1>green</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">green</code></li>
             <li><code class="hex-value">#008000</code></li>
             <li><code class="rgb-value">rgb(0,128,0)</code></li>
@@ -439,7 +503,7 @@
      
     <li style="background: pink;" class="cl" id="pink">
         <h1>pink</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">pink</code></li>
             <li><code class="hex-value">#FFC0CB</code></li>
             <li><code class="rgb-value">rgb(255,192,203)</code></li>
@@ -449,7 +513,7 @@
     
     <li style="background: orange;" class="cd" id="orange">
         <h1>orange</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">orange</code></li>
             <li><code class="hex-value">#FFA500</code></li>
             <li><code class="rgb-value">rgb(255,165,0)</code></li>
@@ -458,7 +522,7 @@
     
     <li style="background: violet;" class="cd" id="violet">
         <h1>violet</h1>
-        <ul class="code-list">
+        <ul class="col">
             <li><code class="colour-name">violet</code></li>
             <li><code class="hex-value">#EE82EE</code></li>
             <li><code class="rgb-value">rgb(238,130,238)</code></li>
