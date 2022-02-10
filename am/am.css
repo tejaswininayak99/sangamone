@@ -76,9 +76,7 @@ a {
     font-size: 28px;
 }
 
-#loginform {
-    display: none;
-}
+#loginform
 .form-box {
     width: 380px;
     height: 480px;
