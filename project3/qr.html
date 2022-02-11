@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<style>
+.container{
+background-color:black;
+width:500px;
+height:500px;
+}
+.txt{
+color:white;
+}
+.aa{
+color:white;
+}
+	.qrcode {
+	max-width: 200px;
+	margin: 10px;
+	}
+	.btn{
+	background-color: #008CBA;
+	float:left;
+	}
+</style>
+
+<title>QR Generator</title>
+</head>
+
+<body>
+<div class="container">
+	<div class="txt">
+
+	
+	<img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+		class="qrcode img-thumbnail img-responsive" />
+	</div>
+
+	<div class="form1">
+	<div class="form2">
+		<label class="aa"for="content">Enter your text:</label>
+		<div class="bb">
+		<br/>
+		<input type="text"  class="form3" id="content" />
+		</div>
+	</div>
+	<div class="form4">
+		<div class="cc">
+
+		<br/>
+		<button type="button" class="btn" id="generate">Generate</button>
+		</div>
+	</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.js">
+</script>
+
+</body>
+
+</html>
