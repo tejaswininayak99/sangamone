@@ -58,7 +58,28 @@ color:white;
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.js">
 </script>
-
+<script>
+ function htmlEncode(value) {
+      return $('<div/>').text(value)
+        .html();
+    }
+  
+    $(function () {
+  
+      
+      $('#generate').click(function () {
+  
+       
+        let finalURL =
+'https://chart.googleapis.com/chart?cht=qr&chl=' +
+          htmlEncode($('#content').val()) +
+          '&chs=160x160&chld=L|0'
+  
+        
+        $('.qrcode').attr('src', finalURL);
+      });
+    });
+  </script>
 </body>
 
 </html>
