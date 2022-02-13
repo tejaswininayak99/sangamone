@@ -71,8 +71,7 @@ color:white;
   
        
         let finalURL ='https://chart.googleapis.com/chart?cht=qr&chl=' +
-          htmlEncode($('#content').val()) +
-          '&chs=160x160&chld=L|0'
+          htmlEncode($('#content').val()) + '&chs=160x160&chld=L|0'
   
         
         $('.qrcode').attr('src', finalURL);
