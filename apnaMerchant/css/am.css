@@ -1,0 +1,28 @@
+﻿body
+{
+    
+}
+
+            nav ul li button {
+                font-size: 20px;
+                color: white;
+                outline: none;
+                border: none;
+                background: black;
+                cursor: pointer;
+                font-family: sans-serif;
+            }
+
+                nav ul li button:hover {
+                    color: PaleVioletRed;
+                }
+
+            nav ul li a:hover {
+                color: blue;
+            }
+
+a {
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
