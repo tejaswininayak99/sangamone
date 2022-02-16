@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-
+<link rel="stylesheet" href="css/am.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -40,7 +40,7 @@
         <div class="col-md-9 col-sm-9 col-xs-9">
       <div class="row">
            <div class="col-md-3 col-xs-3 col-sm-3">
-        <a style="padding-top:0px;" class="navbar-brand navBrandText text-uppercase font-weight-bold" href="index.html"><img src="https://github.com/tejaswininayak99/sangamone-web/blob/6c34ab649e7b3481092438c0b339cef07cceeea1/apnaMerchant/img/logo/Amlogo.jpg" alt="AM" /></a>
+        <a style="padding-top:0px;" class="navbar-brand navBrandText text-uppercase font-weight-bold" href="index.html"><img src="img/logo/Amlogo.jpg" alt="AM" /></a>
                        
           </div>
      </div>
@@ -62,7 +62,61 @@
              <li class="nav-item"><a href="#section4" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Reviews</a></li>
              <li class="nav-item"><a href="#section6" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Contact Us</a></li>
              <li class="nav-item"><a href="#section7" class="nav-link text-uppercase font-weight-bold js-scroll-trigger">Address</a></li>
+			     <li class="nav-item"><button href="login.html" class="nav-link text-uppercase font-weight-bold js-scroll-trigger" onclick="document.getElementById('loginform').style.display='block'">Log In</button></li>
+				  
    </ul>
+  
+        <div id='loginform' class='login-page'>
+           
+            <div class="form-box">
+                     <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text' class='input-field' placeholder='Enter your ID' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='checkbox' class='check-box'><span>Remember Password</span>
+                    <button type='submit' class='submit-btn' href="customer.html">Log in</button>
+                </form>
+                <!-- Registration if needed-->
+                <form id='register' class='input-group-register'>
+                    <input type='text' class='input-field' placeholder='First Name' required>
+                    <input type='text' class='input-field' placeholder='Last Name ' required>
+                    <input type='email' class='input-field' placeholder='Email Id' required>
+                    <input type='email' class='input-field' placeholder='Enter your prefered ID' required>
+                    <input type='password' class='input-field' placeholder='Enter Password' required>
+                    <input type='password' class='input-field' placeholder='Confirm Password' required>
+                    <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn'>Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById('login');
+        var y = document.getElementById('register');
+        var z = document.getElementById('btn');
+        function register() {
+            x.style.left = '-400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+        }
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
             </div>
             </div>
           </nav>
@@ -76,13 +130,13 @@
         <section id="section0" class="slider-area"> 
             <div class="main-slider owl-theme owl-carousel"> 
                 <!--  Slide -->
-                <div class="single-slide item" style="background-image: url(https://wallpapercave.com/wp/wp9103853.jpg)">
+                <div class="single-slide item" style="background-image: url(img/slider/qwqw.jpg)">
 
                         <div class="slider-content-area">  
                                 <div class="row">
                                         <div class="slide-content-wrapper text-center">
                                             <div class="slide-content">
-                                                <img class="classic" src="apnaMerchant/img/logo/aamm.png">
+                                                <img class="classic" src="img/logo/aamm.png">
                                                 <h3>APNA MERCHANT </h3>
                                                 <h2>Now Order With Ease</h2>
                                                 <p>An easier way to mangae your orders and deliveries.</p>
@@ -92,12 +146,12 @@
                                     </div>
                     </div>
                              </div>
-                         <div class="single-slide item" style="background-image: url(https://wallpapercave.com/wp/wp9103853.jpg)">
+                         <div class="single-slide item" style="background-image: url(img/slider/ww.jpg)">
                         <div class="slider-content-area">   
                                 <div class="row">
                                         <div class="slide-content-wrapper text-center">
                                             <div class="slide-content">
-                                                <img class="classic" src="https://github.com/tejaswininayak99/sangamone-web/blob/6c34ab649e7b3481092438c0b339cef07cceeea1/apnaMerchant/img/logo/aamm.jpg">
+                                                <img class="classic" src="img/logo/aamm.jpg">
                                                 <h3>APNA MERCHANT </h3>
                                                 <h2>Now Order With Ease</h2>
                                                 <p>An easier way to mangae your orders and deliveries.</p>
@@ -107,7 +161,22 @@
                   </div>
               
                 </div>	
-              
+                
+                <div class="single-slide item" style="background-image: url(img/slider/1900x1000.png)">
+                        <div class="slider-content-area">   
+                                <div class="row">
+                                        <div class="slide-content-wrapper text-center">
+                                            <div class="slide-content">
+                                                <img class="classic" src="img/logo/cemrebakerylogo.png">
+												<h3>APNA MERCHANT </h3>
+                                                <h2>Now Order With Ease</h2>
+                                                <p>An easier way to mangae your orders and deliveries.</p>
+                                                <a class="default-btn" href="about.html">Learn more</a>  
+
+                                            </div>
+                                    </div>
+                            </div>
+                        </div>
                   
                 </div>
              </div>
@@ -137,6 +206,7 @@
         
      
 	  <br/>
+	  
 	   <br/>
 	    <br/>
 		 <br/>
@@ -154,7 +224,7 @@
                             <div class="single-widget pr-60">
                                 <div class="footer-logo pb-25">
                                                                      <div class="col-md-8 noPadding logo-text">
-                                        <a class="" href="index.html"><img class="img-responsive" src="apnaMerchant/img/logo/aamm.png" /></a>
+                                        <a class="" href="index.html"><img class="img-responsive" src="img/logo/aamm.png" alt="restorant" /></a>
                                         <p class="colorfullText">Apna Store</p>
                                     </div>        
                                 </div>
